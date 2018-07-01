@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    android:padding="@dimen/margin_medium">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:src="@drawable/user_profile"/>
+    <net.aungpyaephyo.mmtextview.components.MMTextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:text="@string/notification_text"
+        android:textColor="@color/primary_text"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_medium"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:weightSum="2"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/btn_accept"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Accept"
+            style="@style/AppButton"
+            android:background="@drawable/bg_round_button_primary_round_4"
+            android:foreground="@drawable/ripple_white"/>
+        <TextView
+            android:id="@+id/btn_reject"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Reject"
+            style="@style/AppButton"
+            android:background="@drawable/bg_round_button_grey_round_4"
+            android:layout_marginTop="2dp"
+            android:foreground="@drawable/ripple_grey"/>
+    </LinearLayout>
+</LinearLayout>

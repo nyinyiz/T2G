@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_view"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="#343434"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#343434"
+            android:scaleType="centerCrop"
+            android:src="@drawable/first_page"/>
+
+        <TextView
+            android:id="@+id/tv_page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="120dp"
+            android:text="Creating Something"
+            android:textSize="@dimen/text_heading_2x"
+            style="@style/AppButton"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/user"
+            app:civ_border_overlay="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/margin_medium_2"
+            />
+
+        <com.bhargavms.podslider.PodSlider
+            android:id="@+id/indicator"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            app:mainSliderColor="@color/colorPrimaryLight"
+            app:podColor="#4CAF50"
+            app:numberOfPods="4"
+            app:selectedPodColor="#fff"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginRight="@dimen/margin_medium_2"/>
+        <!--<me.relex.circleindicator.CircleIndicator-->
+            <!--android:id="@+id/indicator"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginBottom="60dp"-->
+            <!--/>-->
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="-70dp"
+        android:layout_below="@id/rl_view"
+
+        />
+
+
+</RelativeLayout>

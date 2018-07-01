@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+        <android.support.v7.widget.CardView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_medium_2">
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friday, June 15, 2018"
+                    android:textColor="@color/primary_text"/>
+
+                <net.aungpyaephyo.mmtextview.components.MMTextView
+                    android:id="@+id/tv_shop_owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Junk Shop Owner - ( လှိုင်မြို့နယ် )ကိုမောင်မောင်"
+                    android:layout_marginTop="@dimen/margin_medium"/>
+
+                <com.nwt.recyglo_shop.components.rvset.SmartRecyclerView
+                    android:id="@+id/rv_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_medium">
+                    <net.aungpyaephyo.mmtextview.components.MMTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:text="စုစုပေါင်း"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/text_regular_2x"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="-"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_text"
+                        android:gravity="center"/>
+                    <net.aungpyaephyo.mmtextview.components.MMTextView
+                        android:id="@+id/tv_total"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="50 ကျပ်"
+                        android:textSize="@dimen/text_regular_2x"
+                        android:textColor="@color/primary_text"
+                        android:textStyle="bold"
+                        android:gravity="center|end"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</FrameLayout>

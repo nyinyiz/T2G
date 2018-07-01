@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity">
+
+    <TextView
+        android:id="@+id/btn_junk_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Junk shops"
+        android:background="@drawable/bg_round_button"
+        style="@style/AppButton"
+        android:layout_margin="@dimen/margin_medium_2"
+        android:padding="@dimen/margin_medium"
+        android:foreground="@drawable/ripple_white"/>
+    <TextView
+        android:id="@+id/btn_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_junk_shop"
+        android:layout_centerHorizontal="true"
+        android:text="Users"
+        android:background="@drawable/bg_round_button_primary_round_4"
+        style="@style/AppButton"
+        android:padding="@dimen/margin_medium"
+        android:foreground="@drawable/ripple_white"/>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Recyglo</string>
+    <string name="item_type">အမျိုးအမည်</string>
+    <string name="kyat">ကျပ်</string>
+    <string name="loss">တိုး/လျော့</string>
+    <string name="msg_generic_no_data">No data available.</string>
+    <string name="township">လှိုင်မြို့နယ်</string>
+    <string name="shop_name">ကိုမောင်မောင်</string>
+    <string name="description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like …</string>
+    <string name="notification_text">Shop 1 want to sell their items.</string>
+
+
+    <array name="month_array">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </array>
+
+    <string name="lbl_add_photo">ဓါတ်ပုံ</string>
+    <string name="btn_add_news">Publish</string>
+    <string name="screen_title_add_news">Call Buyer</string>
+    <string name="rdo1">၂၄ နာရီ</string>
+    <string name="rdo2">၄၈ နာရီ</string>
+    <string name="rdo3">၇၂ နာရီ</string>
+
+
+</resources>

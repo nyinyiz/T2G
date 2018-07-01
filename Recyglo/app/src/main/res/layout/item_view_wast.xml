@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_view"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    android:layout_marginLeft="@dimen/margin_medium"
+    android:layout_marginRight="@dimen/margin_medium"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/iv_wast"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:src="@drawable/newspaper"/>
+    <net.aungpyaephyo.mmtextview.components.MMTextView
+        android:id="@+id/tv_wast"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:text="Paper and Newspaper"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular"
+        android:gravity="center"/>
+    <net.aungpyaephyo.mmtextview.components.MMTextView
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="500"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular"
+        android:gravity="center"/>
+    <net.aungpyaephyo.mmtextview.components.MMTextView
+        android:id="@+id/tv_diff"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:text="-20"
+        android:textColor="@color/md_red_500"
+        android:textSize="@dimen/text_regular"
+        android:gravity="center|end"/>
+
+</LinearLayout>

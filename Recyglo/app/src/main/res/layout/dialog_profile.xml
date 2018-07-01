@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+        <android.support.v7.widget.CardView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_medium_2">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/user"
+                    app:civ_border_overlay="true"
+                    />
+                <net.aungpyaephyo.mmtextview.components.MMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ဦးညီညီ"
+                    style="@style/AppButton"
+                    android:textColor="@color/primary_text"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:textSize="@dimen/text_regular_3x"/>
+                <net.aungpyaephyo.mmtextview.components.MMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shop One Owner"
+                    style="@style/AppButton"
+                    android:textColor="@color/secondary_text"/>
+                <TextView
+                    android:id="@+id/btn_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Close"
+                    android:layout_gravity="end"
+                    android:padding="@dimen/margin_medium_2"
+                    style="@style/AppButton"
+                    android:background="@drawable/bg_round_button"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</FrameLayout>
